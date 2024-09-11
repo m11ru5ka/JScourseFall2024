@@ -1,0 +1,31 @@
+ // Exercise 1:
+ document.write("<p><strong><i>\"If I had nine hours to chop down a tree, I'd spend the first six sharpening my
+    ax.\"</strong></i></p>");
+document.write("<p>-- Abraham Lincoln</p>");
+// Exercise 2: looppi, jolla toistat tekstirivin 50 x
+for (let i = 0; i < 50; i++) {
+let text = "Toistan tämän tekstirivin " + (i + 1) + " kertaa!<br>";
+document.write(text); // Exercise 3: onko firefox käytössä, jos niin menen mozillan sivulle, muuten toiseen
+osoitteeseen // tässä jekku, jos käyttää selaimen hakuun app.Name tulee aina Netscape // ja appCodeName niin
+tulee aina Mozilla var selain = navigator.userAgent; var browserName; if (selain.indexOf("Firefox") > -1) {
+    window.location.href = "http://www.mozilla.org/";
+} // Seuraavalla elsellä mentäisiin laurean sivuille aina, ellei ole mozilla käytössä
+//else {
+//window.location.href = "https://laurea.fi";
+//}
+}
+// Exercise 4: kyselyboxi / varmistus. Confirm-kyselyboksi tulee ennenkuin sivu on muuten latautunut!!
+document.write("Seuraavaksi kysymyksiä sinulle<br>");
+var opiskelija = confirm("Oletko opiskelija?");
+if (opiskelija) {
+document.write("Welcome student!<br>");
+} else {
+document.write("Sorry, this page is for students only.<br>");
+}
+//exercise 5: tuo document.writella sivulle kuva taulukosta
+var images = [
+"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+];
+document.write('<img src="' + images[1] + '">');
